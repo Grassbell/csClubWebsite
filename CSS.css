@@ -1,25 +1,27 @@
+
 body {
   font-family: "Lato", sans-serif;
 }
 
 .header {
+  margin-left: 10%; /* Same as the width of the sidenav */
   background-color: #f1f1f1;
-  padding: 30px;
+  padding: 1px;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 /* Fixed sidenav, full height */
 .sidenav {
-  height: 200%;
-  width: 200px;
+  height: 100%;
+  width: 10%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 /* Style the sidenav links and the dropdown button */
@@ -37,6 +39,10 @@ body {
   outline: none;
 }
 
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
 /* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
   color: #f1f1f1;
@@ -44,7 +50,7 @@ body {
 
 /* Main content */
 .main {
-  margin-left: 200px; /* Same as the width of the sidenav */
+  margin-left: 10%; /* Same as the width of the sidenav */
   font-size: 20px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
@@ -56,7 +62,7 @@ body {
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-.dropdown-container {
+.dropdown-container {\
   display: none;
   background-color: #262626;
   padding-left: 8px;
@@ -67,6 +73,16 @@ body {
   float: right;
   padding-right: 8px;
 }
+
+.footer {
+  margin-left: 10%; /* Same as the width of the sidenav */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 90%;
+  background-color: grey;
+  color: white;
+  text-align: center;
 
 /* Some media queries for responsiveness */
 @media screen and (max-height: 450px) {
